@@ -1,0 +1,35 @@
+.plusDeFormulaire {
+    display: none; /* Cache les éléments par défaut */
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.plusDeFormulaire.active {
+    display: block; /* Affiche les éléments lorsqu'ils sont actifs */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.buttonPlusInfo {
+    background-color: #008000; /* Vert */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttonPlusInfo:hover {
+    background-color: #005700; /* Couleur plus foncée au survol */
+}
